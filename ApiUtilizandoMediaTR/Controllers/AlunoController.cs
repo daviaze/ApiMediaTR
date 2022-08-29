@@ -19,13 +19,6 @@ namespace ApiUtilizandoMediaTR.Controllers
         [HttpGet]
         public IActionResult GetAlunos()
         {
-            Aluno davi = new Aluno()
-            {
-                Nome = "Davi",
-                DataNascimento = "08/11/99",
-                Matricula = Guid.NewGuid()
-            };
-
             return Ok(_mediator.Send(new GetAlunosRequest { }));
         }
     }

@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 namespace ApiUtilizandoMediaTR.Controllers
 {
     [ApiController]
-    [Route("controller")]
+    [Route("[controller]")]
     public class AlunoController : ControllerBase
     {
         private readonly IMediator _mediator;
